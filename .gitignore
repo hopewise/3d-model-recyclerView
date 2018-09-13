@@ -1,0 +1,9 @@
+
+build/
+bin/
+gen/
+out/
+
+# Gradle files
+#Application/.gradle/
+#Application/build/
