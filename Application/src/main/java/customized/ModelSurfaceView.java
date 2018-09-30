@@ -123,4 +123,8 @@ public class ModelSurfaceView extends GLSurfaceView {
 
 
 	}
+
+	public void clearTextures() {
+		mRenderer.textures.clear();
+	}
 }

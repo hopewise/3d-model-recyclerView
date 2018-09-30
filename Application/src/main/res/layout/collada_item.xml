@@ -18,15 +18,51 @@
 
     android:layout_width="match_parent"
     android:layout_height="300dp"
-    android:background="#000000"
+    android:background="#FFF"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp"
     android:orientation="vertical" >
 
 
-    <customized.ModelSurfaceView
-        android:id="@+id/collada_item"
-   android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="100dp"
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:background="@color/colorPrimary">
+
+            <customized.ModelSurfaceView
+                android:id="@+id/collada_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
 
 </LinearLayout>

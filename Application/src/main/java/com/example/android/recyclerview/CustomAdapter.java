@@ -78,6 +78,13 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
         //vh.setIsRecyclable(false);
         return vh;
     }
+
+    @Override
+    public void onViewAttachedToWindow(ViewHolder holder) {
+        super.onViewAttachedToWindow(holder);
+        //https://github.com/andresoviedo/android-3D-model-viewer/issues/60
+        holder.getModelSurfaceView().clearTextures();
+    }
     // END_INCLUDE(recyclerViewOnCreateViewHolder)
 
     // BEGIN_INCLUDE(recyclerViewOnBindViewHolder)

@@ -40,7 +40,7 @@ public class ModelRenderer implements GLSurfaceView.Renderer {
 	// The wireframe associated shape (it should be made of lines only)
 	private Map<Object3DData, Object3DData> wireframes = new HashMap<Object3DData, Object3DData>();
 	// The loaded textures
-	private Map<byte[], Integer> textures = new HashMap<byte[], Integer>();
+	public Map<byte[], Integer> textures = new HashMap<byte[], Integer>();
 	// The corresponding opengl bounding boxes and drawer
 	private Map<Object3DData, Object3DData> boundingBoxes = new HashMap<Object3DData, Object3DData>();
 	// The corresponding opengl bounding boxes
